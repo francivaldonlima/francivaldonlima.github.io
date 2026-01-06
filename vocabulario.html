@@ -1,227 +1,214 @@
-<!DOCTYPE html  >
+<!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>MEUS FAVORITOS</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <style>
+        body {
+            background: #555;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-    body {
-    background: #555;
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    }
+        /*cima - direita - embaixo - esquerda */
 
-    /*cima - direita - embaixo - esquerda */
+        .content {
+            max-width: 1200;
+            margin: 50px;
+            padding: center;
+        }
 
-    .content {
-    max-width: 1200;
-    margin: 50px; 
-    padding: center;
-    }
-
-    .kkk {
-    width:1200px; 
-    height:1000px; 
-    position: fixed; 
-    top: 45%; 
-    left: center;
-    margin-top: -50px; 
-    margin-left: -50px; 
-     }
-
-
-     div.www {
-      position: fixed;
-      top: 10%; 
-      margin-left: 0px;
-      margin-right: 0px;
-      padding: 20px;
-      border: 3px solid black;
-      background-color: lightblue;
-      text-align: center;
-    }
-
-    .xxx {
-    max-width: 1200;
-    margin: 150px; 
-    position: fixed;
-    overflow: hidden;
-    padding: center;
-    }
-
-    h1 {
-    position: fixed;
-    top: 12%; 
-    float: left;
-    color: #f2f2f2;
-   
-    padding: 10px 0px;
-    
-    font-size: 100px;
-    text-align: center;
+        .kkk {
+            width: 1200px;
+            height: 1000px;
+            position: fixed;
+            top: 45%;
+            left: center;
+            margin-top: -50px;
+            margin-left: -50px;
+        }
 
 
-    }
+        div.www {
+            position: fixed;
+            top: 10%;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 20px;
+            border: 3px solid black;
+            background-color: lightblue;
+            text-align: center;
+        }
 
-   
-    div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-    }
+        .xxx {
+            max-width: 1200;
+            margin: 150px;
+            position: fixed;
+            overflow: hidden;
+            padding: center;
+        }
 
-    div.gallery:hover {
-    border: 1px solid #777;
-    }
+        h1 {
+            position: fixed;
+            top: 12%;
+            float: left;
+            color: #f2f2f2;
 
-    div.gallery img {
-    width: 100%;
-    height: auto;
-    }
+            padding: 10px 0px;
 
-    div.desc {
-    padding: 12px 12px 12px 12px;
-    text-align: center;
-    background-color: red;
-    font-weight:bold;
-    }
-
-    /*cima - direita - embaixo - esquerda */
-    div.desc2 {
-    padding: 12px 12px 12px 12px;
-    text-align: center;
-    background-color: red;
-    font-weight:bold;
-    }
-
-    .topnav {
-    position: fixed;
-    overflow: hidden;
-    z-index:2;
-    width:100%;
-    font-size:17px;
-    background-color: #333;
-    margin-top: 100px;
-    position: fixed;
-    overflow: hidden;
-    background-color: #333;
-    margin-top: -50px;
-    letter-spacing:1px;
-    padding:0;
-
-    }
+            font-size: 100px;
+            text-align: center;
 
 
-    .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    }
-
-    .topnav a:hover {
-    background-color: #ddd;
-    color: red;
-
-    }
-
-    .topnav a.active {
-    background-color: #4CAF50;
-    color: white;
-    }
+        }
 
 
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
 
-    .input-large {
-color: color: #ff0370;
-line-height: 30px !important;
-font-size: 50px !important;
--webkit-border-radius: 6px;
--moz-border-radius: 6px;
-border-radius: 6px;
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
 
-}
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
 
-.input-large[class=input-large] {
-    width: 100px;
-}
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: blue;
-}
-::-moz-placeholder { /* Firefox 19+ */
-  color: blue;
-}
-:-ms-input-placeholder { /* IE 10+ */
-  color: blue;
-}
-:-moz-placeholder { /* Firefox 18- */
-  color: blue;
-}
-.cr {
-       
-    border: .08em solid rgba(0,0,0,.1);
-    border-radius: .8px;
-}
-.cr, .cr:active {
-    background: #41b7d8;
-}
+        div.desc {
+            padding: 12px 12px 12px 12px;
+            text-align: center;
+            background-color: red;
+            font-weight: bold;
+        }
 
-.cr, .nxt a, .prv a {
-    display: inline-block;
-}
-input[type=button] {
-    width: 200px;  
-    height: 60px;
- }
-input[type="text"] {
+        /*cima - direita - embaixo - esquerda */
+        div.desc2 {
+            padding: 12px 12px 12px 12px;
+            text-align: center;
+            background-color: red;
+            font-weight: bold;
+        }
+
+        .topnav {
+            position: fixed;
+            overflow: hidden;
+            z-index: 2;
+            width: 100%;
+            font-size: 17px;
+            background-color: #333;
+            margin-top: 100px;
+            position: fixed;
+            overflow: hidden;
+            background-color: #333;
+            margin-top: -50px;
+            letter-spacing: 1px;
+            padding: 0;
+
+        }
 
 
-  background-color : #d1d1d1; 
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
 
-}
-input {
-color: blue;
-font-size: 40px
-} 
-input[type="text"] {
-color: green;
- 
+        .topnav a:hover {
+            background-color: #ddd;
+            color: red;
 
-}
+        }
+
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
 
 
 
+        .input-large {
+            color: color: #ff0370;
+            line-height: 30px !important;
+            font-size: 50px !important;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
 
-    </style>
-  </head>
-  <body>
-    <div class="topnav">
-      <a class="active" href="./index.html">HOME</a>
-      <a href="./materiais.html">MATERIAIS</a>
-      <a href="./conhecimento.html">CONHECIMENTO</a>
-      <a href="./games.html">GAMES</a>
-      <a href="./programacao.html">PROGRAMAÇÃO</a>
-      <a href="./youtybe.html">YOUTUBE</a>
-      <a href="./automacao.html">AUTOMAÇÃO</a>
-      <!--
-      <a href="file:///home/francivaldonlima/Documentos/dialvaldo/eletronica.html">ELETRÔNICA</a>
-      <a href="file:///home/francivaldonlima/Documentos/dialvaldo/eletronica.html">MECATRÔNICA</a>
-      <a href="file:///home/francivaldonlima/Documentos/dialvaldo/eletronica.html">FAVORITOS</a>
-      -->
-    </div>
+        }
 
-    <div>
+        .input-large[class=input-large] {
+            width: 100px;
+        }
 
-        <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo de Vocabulário - Inglês</title>
-    <style>
+        ::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: blue;
+        }
+
+        ::-moz-placeholder {
+            /* Firefox 19+ */
+            color: blue;
+        }
+
+        :-ms-input-placeholder {
+            /* IE 10+ */
+            color: blue;
+        }
+
+        :-moz-placeholder {
+            /* Firefox 18- */
+            color: blue;
+        }
+
+        .cr {
+
+            border: .08em solid rgba(0, 0, 0, .1);
+            border-radius: .8px;
+        }
+
+        .cr,
+        .cr:active {
+            background: #41b7d8;
+        }
+
+        .cr,
+        .nxt a,
+        .prv a {
+            display: inline-block;
+        }
+
+        input[type=button] {
+            width: 200px;
+            height: 60px;
+        }
+
+        input[type="text"] {
+
+
+            background-color: #d1d1d1;
+
+        }
+
+        input {
+            color: blue;
+            font-size: 40px
+        }
+
+        input[type="text"] {
+            color: green;
+
+
+        }
+
         :root {
             --primary: #4a90e2;
             --secondary: #f5f6fa;
@@ -247,7 +234,7 @@ color: green;
             width: 100%;
             max-width: 600px;
             border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             padding-bottom: 20px;
         }
@@ -265,7 +252,7 @@ color: green;
         .score-box {
             font-size: 1.2rem;
             font-weight: bold;
-            background: rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.2);
             padding: 5px 15px;
             border-radius: 20px;
         }
@@ -276,9 +263,15 @@ color: green;
             overflow-x: auto;
             background: #f8f9fa;
             border-bottom: 1px solid #ddd;
-            scrollbar-width: none; /* Firefox */
+            scrollbar-width: none;
+            /* Firefox */
         }
-        .tabs::-webkit-scrollbar { display: none; } /* Chrome/Safari */
+
+        .tabs::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Chrome/Safari */
 
         .tab {
             padding: 15px 20px;
@@ -340,7 +333,8 @@ color: green;
             transition: transform 0.1s, background 0.2s;
             font-weight: 500;
             color: var(--text);
-            height: 100%; /* Garante altura uniforme na grid */
+            height: 100%;
+            /* Garante altura uniforme na grid */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -377,431 +371,442 @@ color: green;
             text-decoration: underline;
             cursor: pointer;
         }
-        
+
         #feedback-msg {
-            height: 20px; font-weight: bold; margin-top: 15px;
+            height: 20px;
+            font-weight: bold;
+            margin-top: 15px;
         }
     </style>
 </head>
+
 <body>
+    <div class="topnav">
+        <a class="active" href="./index.html">HOME</a>
+        <a href="./materiais.html">MATERIAIS</a>
+        <a href="./conhecimento.html">CONHECIMENTO</a>
+        <a href="./games.html">GAMES</a>
+        <a href="./programacao.html">PROGRAMAÇÃO</a>
+        <a href="./youtybe.html">YOUTUBE</a>
+        <a href="./automacao.html">AUTOMAÇÃO</a>
+        <a href="./vocabulario.html">VOCABULÁRIO</a>
+        <!--
+      <a href="file:///home/francivaldonlima/Documentos/dialvaldo/eletronica.html">ELETRÔNICA</a>
+      <a href="file:///home/francivaldonlima/Documentos/dialvaldo/eletronica.html">MECATRÔNICA</a>
+      <a href="file:///home/francivaldonlima/Documentos/dialvaldo/eletronica.html">FAVORITOS</a>
+      -->
+    </div>
 
-<div class="container">
-    <header>
-        <div>English Practice</div>
-        <div class="score-box">Pontos: <span id="score">0</span></div>
-    </header>
+    <div class="content">
 
-    <div class="tabs" id="tabs-container">
-        </div>
 
-    <div class="game-area">
-        <div class="question-box">
-            <div class="question-label">Como se diz em inglês:</div>
-            <div class="question-word" id="question-word">...</div>
-        </div>
 
-        <div class="options-grid" id="options-container">
+        <div class="container">
+            <header>
+                <div>English Practice</div>
+                <div class="score-box">Pontos: <span id="score">0</span></div>
+            </header>
+
+            <div class="tabs" id="tabs-container">
             </div>
-        
-        <p id="feedback-msg"></p>
-    </div>
-</div>
-<button class="reset-btn" onclick="resetScore()">Resetar Pontuação</button>
 
-<script>
-    // --- 1. DADOS (Amostra - COLE SUA LISTA GIGANTE AQUI) ---
-    const rawData = [
-    //# --- PRONOMES (Pronouns) ---
-    ["I", "Eu", "Pronoun"], ["You", "Você", "Pronoun"], ["He", "Ele", "Pronoun"],
-    ["She", "Ela", "Pronoun"], ["It", "Ele/Ela [coisa]", "Pronoun"], ["We", "Nós", "Pronoun"],
-    ["They", "Eles/Elas", "Pronoun"], ["Me", "Mim/Me", "Pronoun"], ["Him", "Ele [objeto]", "Pronoun"],
-    ["Her", "Ela [objeto/dela]", "Pronoun"], ["Us", "Nos", "Pronoun"], ["Them", "Eles/Elas [objeto]", "Pronoun"],
-    ["My", "Meu", "Pronoun"], ["Your", "Seu", "Pronoun"], ["His", "Dele", "Pronoun"],
-    ["Its", "Dele/Dela [coisa]", "Pronoun"], ["Our", "Nosso", "Pronoun"], ["Their", "Deles/Delas", "Pronoun"],
-    ["Mine", "Meu [possesivo]", "Pronoun"], ["Yours", "Seu [possesivo]", "Pronoun"],
-    ["This", "Este/Isto", "Pronoun"], ["That", "Aquele/Aquilo", "Pronoun"], ["These", "Estes", "Pronoun"],
-    ["Those", "Aqueles", "Pronoun"], ["Who", "Quem", "Pronoun"], ["What", "O que/Qual", "Pronoun"],
-    ["Which", "Qual", "Pronoun"], ["Where", "Onde", "Pronoun"], ["When", "Quando", "Pronoun"],
-    ["Why", "Por que", "Pronoun"], ["How", "Como", "Pronoun"], ["Anyone", "Qualquer um", "Pronoun"],
-    ["Someone", "Alguém", "Pronoun"], ["Everyone", "Todos", "Pronoun"], ["nobody", "Ninguém", "Pronoun"],
-    ["Anything", "Qualquer coisa", "Pronoun"], ["Something", "Algo", "Pronoun"], ["Everything", "Tudo", "Pronoun"],
-    ["Nothing", "Nada", "Pronoun"], ["Myself", "Eu mesmo", "Pronoun"], ["Yourself", "Você mesmo", "Pronoun"],
+            <div class="game-area">
+                <div class="question-box">
+                    <div class="question-label">Como se diz em inglês:</div>
+                    <div class="question-word" id="question-word">...</div>
+                </div>
 
-    //# --- QUANTIFICADORES & DETERMINANTES [Quantifiers] ---
-    ["Few", "Poucos", "Quantifier"], ["A few", "Alguns", "Quantifier"], ["Many", "Muitos", "Quantifier"],
-    ["Much", "Muito [incontável]", "Quantifier"], ["A lot", "Muito/Bastante", "Quantifier"],
-    ["Some", "Algum", "Quantifier"], ["Any", "Qualquer/Nenhum", "Quantifier"], ["No", "Nenhum/Não", "Quantifier"],
-    ["All", "Todo/Tudo", "Quantifier"], ["Every", "Todo/Cada", "Quantifier"], ["Each", "Cada", "Quantifier"],
-    ["Both", "Ambos", "Quantifier"], ["Either", "Qualquer um [de 2]", "Quantifier"],
-    ["Neither", "Nenhum [de 2]", "Quantifier"], ["Enough", "Suficiente", "Quantifier"],
-    ["Several", "Vários", "Quantifier"], ["Little", "Pouco", "Quantifier"], ["Less", "Menos", "Quantifier"],
-    ["Least", "O mínimo", "Quantifier"], ["More", "Mais", "Quantifier"], ["Most", "A maioria/O mais", "Quantifier"],
+                <div class="options-grid" id="options-container">
+                </div>
 
-    //# --- ADVÉRBIOS [Adverbs] ---
-    ["Now", "Agora", "Adverb"], ["Then", "Então/Depois", "Adverb"], ["Today", "Hoje", "Adverb"],
-    ["Tomorrow", "Amanhã", "Adverb"], ["Yesterday", "Ontem", "Adverb"], ["Tonight", "Hoje à noite", "Adverb"],
-    ["Always", "Sempre", "Adverb"], ["Never", "Nunca", "Adverb"], ["Often", "Frequentemente", "Adverb"],
-    ["Sometimes", "Às vezes", "Adverb"], ["Usually", "Geralmente", "Adverb"], ["Rarely", "Raramente", "Adverb"],
-    ["Here", "Aqui", "Adverb"], ["There", "Lá", "Adverb"], ["Everywhere", "Em todo lugar", "Adverb"],
-    ["Nowhere", "Em lugar nenhum", "Adverb"], ["Away", "Longe/Fora", "Adverb"], ["Out", "Fora", "Adverb"],
-    ["In", "Dentro", "Adverb"], ["Up", "Para cima", "Adverb"], ["Down", "Para baixo", "Adverb"],
-    ["Very", "Muito", "Adverb"], ["Really", "Realmente", "Adverb"], ["Too", "Também/Demais", "Adverb"],
-    ["Quite", "Bastante/Quieto", "Adverb"], ["Almost", "Quase", "Adverb"], ["Just", "Apenas/Justo", "Adverb"],
-    ["Only", "Somente", "Adverb"], ["Even", "Até mesmo", "Adverb"], ["Also", "Também", "Adverb"],
-    ["Maybe", "Talvez", "Adverb"], ["Perhaps", "Talvez", "Adverb"], ["Probably", "Provavelmente", "Adverb"],
-    ["Quickly", "Rapidamente", "Adverb"], ["Slowly", "Lentamente", "Adverb"], ["Carefully", "Cuidadosamente", "Adverb"],
-    ["Easily", "Facilmente", "Adverb"], ["Well", "Bem", "Adverb"], ["Badly", "Mal", "Adverb"],
-    ["Together", "Juntos", "Adverb"], ["Alone", "Sozinho", "Adverb"], ["Again", "De novo", "Adverb"],
-    ["Already", "Já", "Adverb"], ["Still", "Ainda", "Adverb"], ["Yet", "Ainda/Já", "Adverb"],
-    ["Ever", "Jamais/Alguma vez", "Adverb"], ["So", "Então/Tão", "Adverb"], ["Why", "Por que", "Adverb"],
+                <p id="feedback-msg"></p>
+            </div>
+        </div>
+        <button class="reset-btn" onclick="resetScore()">Resetar Pontuação</button>
 
-    //# --- PREPOSIÇÕES & CONJUNÇÕES [Prepositions/Conjunctions] ---
-    ["And", "E", "Conjunction"], ["But", "Mas", "Conjunction"], ["Or", "Ou", "Conjunction"],
-    ["Because", "Porque", "Conjunction"], ["If", "Se", "Conjunction"], ["So", "Então", "Conjunction"],
-    ["Although", "Embora", "Conjunction"], ["While", "Enquanto", "Conjunction"],
-    ["Of", "De", "Preposition"], ["To", "Para", "Preposition"], ["In", "Em/Dentro", "Preposition"],
-    ["For", "Para/Por", "Preposition"], ["With", "Com", "Preposition"], ["On", "Em/Sobre", "Preposition"],
-    ["At", "Em/Às", "Preposition"], ["From", "De/Desde", "Preposition"], ["By", "Por", "Preposition"],
-    ["About", "Sobre", "Preposition"], ["As", "Como/Enquanto", "Preposition"], ["Into", "Para dentro", "Preposition"],
-    ["Like", "Como", "Preposition"], ["Through", "Através", "Preposition"], ["After", "Depois", "Preposition"],
-    ["Over", "Sobre/Acima", "Preposition"], ["Between", "Entre", "Preposition"], ["Out", "Fora", "Preposition"],
-    ["Against", "Contra", "Preposition"], ["During", "Durante", "Preposition"], ["Without", "Sem", "Preposition"],
-    ["Before", "Antes", "Preposition"], ["Under", "Embaixo", "Preposition"], ["Around", "Ao redor", "Preposition"],
-    ["Among", "Entre [vários]", "Preposition"],
+        <script>
+            // --- 1. DADOS (Amostra - COLE SUA LISTA GIGANTE AQUI) ---
+            const rawData = [
+                //# --- PRONOMES (Pronouns) ---
+                ["I", "Eu", "Pronoun"], ["You", "Você", "Pronoun"], ["He", "Ele", "Pronoun"],
+                ["She", "Ela", "Pronoun"], ["It", "Ele/Ela [coisa]", "Pronoun"], ["We", "Nós", "Pronoun"],
+                ["They", "Eles/Elas", "Pronoun"], ["Me", "Mim/Me", "Pronoun"], ["Him", "Ele [objeto]", "Pronoun"],
+                ["Her", "Ela [objeto/dela]", "Pronoun"], ["Us", "Nos", "Pronoun"], ["Them", "Eles/Elas [objeto]", "Pronoun"],
+                ["My", "Meu", "Pronoun"], ["Your", "Seu", "Pronoun"], ["His", "Dele", "Pronoun"],
+                ["Its", "Dele/Dela [coisa]", "Pronoun"], ["Our", "Nosso", "Pronoun"], ["Their", "Deles/Delas", "Pronoun"],
+                ["Mine", "Meu [possesivo]", "Pronoun"], ["Yours", "Seu [possesivo]", "Pronoun"],
+                ["This", "Este/Isto", "Pronoun"], ["That", "Aquele/Aquilo", "Pronoun"], ["These", "Estes", "Pronoun"],
+                ["Those", "Aqueles", "Pronoun"], ["Who", "Quem", "Pronoun"], ["What", "O que/Qual", "Pronoun"],
+                ["Which", "Qual", "Pronoun"], ["Where", "Onde", "Pronoun"], ["When", "Quando", "Pronoun"],
+                ["Why", "Por que", "Pronoun"], ["How", "Como", "Pronoun"], ["Anyone", "Qualquer um", "Pronoun"],
+                ["Someone", "Alguém", "Pronoun"], ["Everyone", "Todos", "Pronoun"], ["nobody", "Ninguém", "Pronoun"],
+                ["Anything", "Qualquer coisa", "Pronoun"], ["Something", "Algo", "Pronoun"], ["Everything", "Tudo", "Pronoun"],
+                ["Nothing", "Nada", "Pronoun"], ["Myself", "Eu mesmo", "Pronoun"], ["Yourself", "Você mesmo", "Pronoun"],
 
-    //# --- ADJETIVOS ESSENCIAIS [Adjectives] ---
-    ["Good", "Bom", "Adjective"], ["Bad", "Ruim", "Adjective"], ["Big", "Grande", "Adjective"],
-    ["Small", "Pequeno", "Adjective"], ["Large", "Grande/Amplo", "Adjective"], ["Huge", "Enorme", "Adjective"],
-    ["Tiny", "Minúsculo", "Adjective"], ["Long", "Longo", "Adjective"], ["Short", "Curto/Baixo", "Adjective"],
-    ["Tall", "Alto", "Adjective"], ["High", "Alto [nível]", "Adjective"], ["Low", "Baixo [nível]", "Adjective"],
-    ["Wide", "Largo", "Adjective"], ["Narrow", "Estreito", "Adjective"], ["Deep", "Fundo", "Adjective"],
-    ["Shallow", "Raso", "Adjective"], ["Heavy", "Pesado", "Adjective"], ["Light", "Leve/Claro", "Adjective"],
-    ["New", "Novo", "Adjective"], ["Old", "Velho/Antigo", "Adjective"], ["Young", "Jovem", "Adjective"],
-    ["Modern", "Moderno", "Adjective"], ["Ancient", "Antigo", "Adjective"], ["Fast", "Rápido", "Adjective"],
-    ["Slow", "Lento", "Adjective"], ["Hard", "Duro/Difícil", "Adjective"], ["Soft", "Macio", "Adjective"],
-    ["Easy", "Fácil", "Adjective"], ["Difficult", "Difícil", "Adjective"], ["Simple", "Simples", "Adjective"],
-    ["Complex", "Complexo", "Adjective"], ["Hot", "Quente", "Adjective"], ["Cold", "Frio", "Adjective"],
-    ["Warm", "Morno", "Adjective"], ["Cool", "Fresco/Legal", "Adjective"], ["Dry", "Seco", "Adjective"],
-    ["Wet", "Molhado", "Adjective"], ["Happy", "Feliz", "Adjective"], ["Sad", "Triste", "Adjective"],
-    ["Angry", "Bravo", "Adjective"], ["Calm", "Calmo", "Adjective"], ["Excited", "Animado", "Adjective"],
-    ["Bored", "Entediado", "Adjective"], ["Tired", "Cansado", "Adjective"], ["Hungry", "Faminto", "Adjective"],
-    ["Thirsty", "Sedento", "Adjective"], ["Sick", "Doente", "Adjective"], ["Healthy", "Saudável", "Adjective"],
-    ["Strong", "Forte", "Adjective"], ["Weak", "Fraco", "Adjective"], ["Beautiful", "Bonito", "Adjective"],
-    ["Ugly", "Feio", "Adjective"], ["Clean", "Limpo", "Adjective"], ["Dirty", "Sujo", "Adjective"],
-    ["Rich", "Rico", "Adjective"], ["Poor", "Pobre", "Adjective"], ["Expensive", "Caro", "Adjective"],
-    ["Cheap", "Barato", "Adjective"], ["Full", "Cheio", "Adjective"], ["Empty", "Vazio", "Adjective"],
-    ["Right", "Certo", "Adjective"], ["Wrong", "Errado", "Adjective"], ["True", "Verdadeiro", "Adjective"],
-    ["False", "Falso", "Adjective"], ["Open", "Aberto", "Adjective"], ["Closed", "Fechado", "Adjective"],
-    ["Safe", "Seguro", "Adjective"], ["Dangerous", "Perigoso", "Adjective"], ["Same", "Mesmo", "Adjective"],
-    ["Different", "Diferente", "Adjective"], ["Important", "Importante", "Adjective"], ["Ready", "Pronto", "Adjective"],
-    ["Available", "Disponível", "Adjective"], ["Free", "Livre/Grátis", "Adjective"], ["Busy", "Ocupado", "Adjective"],
-    ["Kind", "Gentil", "Adjective"], ["Mean", "Malvado", "Adjective"], ["Funny", "Engraçado", "Adjective"],
-    ["Serious", "Sério", "Adjective"], ["Smart", "Esperto", "Adjective"], ["Stupid", "Estúpido", "Adjective"],
-    ["Polite", "Educado", "Adjective"], ["Rude", "Grosseiro", "Adjective"], ["Nice", "Legal", "Adjective"],
-    ["Famous", "Famoso", "Adjective"], ["Common", "Comum", "Adjective"], ["Rare", "Raro", "Adjective"],
-    ["Clear", "Claro", "Adjective"], ["Dark", "Escuro", "Adjective"], ["Bright", "Brilhante", "Adjective"],
-    ["Loud", "Alto [som]", "Adjective"], ["Quiet", "Quieto", "Adjective"], ["Sharp", "Afiado", "Adjective"],
-    ["Smooth", "Liso", "Adjective"], ["Rough", "Áspero", "Adjective"], ["Sweet", "Doce", "Adjective"],
-    ["Sour", "Azedo", "Adjective"], ["Bitter", "Amargo", "Adjective"], ["Salty", "Salgado", "Adjective"],
-    ["Fresh", "Fresco", "Adjective"], ["Rotten", "Podre", "Adjective"], ["Single", "Solteiro/Único", "Adjective"],
-    ["Married", "Casado", "Adjective"], ["Dead", "Morto", "Adjective"], ["Alive", "Vivo", "Adjective"],
-    ["Human", "Humano", "Adjective"], ["Social", "Social", "Adjective"], ["Public", "Público", "Adjective"],
-    ["Private", "Privado", "Adjective"], ["Main", "Principal", "Adjective"], ["Real", "Real", "Adjective"],
-    ["Fake", "Falso/Falsificado", "Adjective"], ["Possible", "Possível", "Adjective"], ["Impossible", "Impossível", "Adjective"],
-    ["Likely", "Provável", "Adjective"], ["Unlikely", "Improvável", "Adjective"], ["Certain", "Certo", "Adjective"],
-    ["Unsure", "Incerto", "Adjective"], ["Useful", "Útil", "Adjective"], ["Useless", "Inútil", "Adjective"],
-    ["Foreign", "Estrangeiro", "Adjective"], ["Local", "Local", "Adjective"], ["Current", "Atual", "Adjective"],
-    ["Past", "Passado", "Adjective"], ["Future", "Futuro", "Adjective"], ["Whole", "Inteiro", "Adjective"],
-    ["Broken", "Quebrado", "Adjective"], ["Working", "Funcionando", "Adjective"], ["Asleep", "Adormecido", "Adjective"],
-    ["Awake", "Acordado", "Adjective"], ["Afraid", "Com medo", "Adjective"], ["Brave", "Corajoso", "Adjective"],
+                //# --- QUANTIFICADORES & DETERMINANTES [Quantifiers] ---
+                ["Few", "Poucos", "Quantifier"], ["A few", "Alguns", "Quantifier"], ["Many", "Muitos", "Quantifier"],
+                ["Much", "Muito [incontável]", "Quantifier"], ["A lot", "Muito/Bastante", "Quantifier"],
+                ["Some", "Algum", "Quantifier"], ["Any", "Qualquer/Nenhum", "Quantifier"], ["No", "Nenhum/Não", "Quantifier"],
+                ["All", "Todo/Tudo", "Quantifier"], ["Every", "Todo/Cada", "Quantifier"], ["Each", "Cada", "Quantifier"],
+                ["Both", "Ambos", "Quantifier"], ["Either", "Qualquer um [de 2]", "Quantifier"],
+                ["Neither", "Nenhum [de 2]", "Quantifier"], ["Enough", "Suficiente", "Quantifier"],
+                ["Several", "Vários", "Quantifier"], ["Little", "Pouco", "Quantifier"], ["Less", "Menos", "Quantifier"],
+                ["Least", "O mínimo", "Quantifier"], ["More", "Mais", "Quantifier"], ["Most", "A maioria/O mais", "Quantifier"],
 
-    //# --- VERBOS ESSENCIAIS [Verbs - Infinitivo] ---
-    ["Be", "Ser/Estar", "Verb"], ["Have", "Ter", "Verb"], ["Do", "Fazer", "Verb"],
-    ["Say", "Dizer", "Verb"], ["Go", "Ir", "Verb"], ["Get", "Pegar/Conseguir", "Verb"],
-    ["Make", "Fazer [criar]", "Verb"], ["Know", "Saber/Conhecer", "Verb"], ["Think", "Pensar/Achar", "Verb"],
-    ["Take", "Tomar/Levar", "Verb"], ["See", "Ver", "Verb"], ["Come", "Vir", "Verb"],
-    ["Want", "Querer", "Verb"], ["Look", "Olhar/Parecer", "Verb"], ["Use", "Usar", "Verb"],
-    ["Find", "Encontrar", "Verb"], ["Give", "Dar", "Verb"], ["Tell", "Contar/Dizer", "Verb"],
-    ["Work", "Trabalhar", "Verb"], ["Call", "Chamar/Ligar", "Verb"], ["Try", "Tentar", "Verb"],
-    ["Ask", "Perguntar/Pedir", "Verb"], ["Need", "Precisar", "Verb"], ["Feel", "Sentir", "Verb"],
-    ["Become", "Tornar-se", "Verb"], ["Leave", "Sair/Deixar", "Verb"], ["Put", "Colocar", "Verb"],
-    ["Mean", "Significar", "Verb"], ["Keep", "Manter", "Verb"], ["Let", "Deixar/Permitir", "Verb"],
-    ["Begin", "Começar", "Verb"], ["Seem", "Parecer", "Verb"], ["Help", "Ajudar", "Verb"],
-    ["Talk", "Conversar", "Verb"], ["Turn", "Virar", "Verb"], ["Start", "Começar", "Verb"],
-    ["Show", "Mostrar", "Verb"], ["Hear", "Ouvir", "Verb"], ["Play", "Brincar/Tocar", "Verb"],
-    ["Run", "Correr", "Verb"], ["Move", "Mover", "Verb"], ["Like", "Gostar", "Verb"],
-    ["Live", "Viver/Morar", "Verb"], ["Believe", "Acreditar", "Verb"], ["Hold", "Segurar", "Verb"],
-    ["Bring", "Trazer", "Verb"], ["Happen", "Acontecer", "Verb"], ["Write", "Escrever", "Verb"],
-    ["Provide", "Prover/Fornecer", "Verb"], ["Sit", "Sentar", "Verb"], ["Stand", "Ficar de pé", "Verb"],
-    ["Lose", "Perder", "Verb"], ["Pay", "Pagar", "Verb"], ["Meet", "Encontrar/Conhecer", "Verb"],
-    ["Include", "Incluir", "Verb"], ["Continue", "Continuar", "Verb"], ["Set", "Definir/Pôr", "Verb"],
-    ["Learn", "Aprender", "Verb"], ["Change", "Mudar", "Verb"], ["Lead", "Liderar", "Verb"],
-    ["Understand", "Entender", "Verb"], ["Watch", "Assistir", "Verb"], ["Follow", "Seguir", "Verb"],
-    ["Stop", "Parar", "Verb"], ["Create", "Criar", "Verb"], ["Speak", "Falar", "Verb"],
-    ["Read", "Ler", "Verb"], ["Allow", "Permitir", "Verb"], ["Add", "Adicionar", "Verb"],
-    ["Spend", "Gastar", "Verb"], ["Grow", "Crescer", "Verb"], ["Open", "Abrir", "Verb"],
-    ["Walk", "Andar", "Verb"], ["Win", "Vencer", "Verb"], ["Offer", "Oferecer", "Verb"],
-    ["Remember", "Lembrar", "Verb"], ["Love", "Amar", "Verb"], ["Consider", "Considerar", "Verb"],
-    ["Appear", "Aparecer", "Verb"], ["Buy", "Comprar", "Verb"], ["Wait", "Esperar", "Verb"],
-    ["Serve", "Servir", "Verb"], ["Die", "Morrer", "Verb"], ["Send", "Enviar", "Verb"],
-    ["Expect", "Esperar [expectativa]", "Verb"], ["Build", "Construir", "Verb"], ["Stay", "Ficar", "Verb"],
-    ["Fall", "Cair", "Verb"], ["Cut", "Cortar", "Verb"], ["Reach", "Alcançar", "Verb"],
-    ["Kill", "Matar", "Verb"], ["Remain", "Permanecer", "Verb"], ["Suggest", "Sugerir", "Verb"],
-    ["Raise", "Levantar/Criar", "Verb"], ["Pass", "Passar", "Verb"], ["Sell", "Vender", "Verb"],
-    ["Require", "Requerer", "Verb"], ["Report", "Reportar", "Verb"], ["Decide", "Decidir", "Verb"],
-    ["Pull", "Puxar", "Verb"], ["Push", "Empurrar", "Verb"], ["Break", "Quebrar", "Verb"],
-    ["Eat", "Comer", "Verb"], ["Drink", "Beber", "Verb"], ["Sleep", "Dormir", "Verb"],
-    ["Throw", "Jogar", "Verb"], ["Catch", "Pegar [bola]", "Verb"], ["Drive", "Dirigir", "Verb"],
-    ["Fly", "Voar", "Verb"], ["Swim", "Nadar", "Verb"], ["Teach", "Ensinar", "Verb"],
-    ["Study", "Estudar", "Verb"], ["Cost", "Custar", "Verb"], ["Forget", "Esquecer", "Verb"],
+                //# --- ADVÉRBIOS [Adverbs] ---
+                ["Now", "Agora", "Adverb"], ["Then", "Então/Depois", "Adverb"], ["Today", "Hoje", "Adverb"],
+                ["Tomorrow", "Amanhã", "Adverb"], ["Yesterday", "Ontem", "Adverb"], ["Tonight", "Hoje à noite", "Adverb"],
+                ["Always", "Sempre", "Adverb"], ["Never", "Nunca", "Adverb"], ["Often", "Frequentemente", "Adverb"],
+                ["Sometimes", "Às vezes", "Adverb"], ["Usually", "Geralmente", "Adverb"], ["Rarely", "Raramente", "Adverb"],
+                ["Here", "Aqui", "Adverb"], ["There", "Lá", "Adverb"], ["Everywhere", "Em todo lugar", "Adverb"],
+                ["Nowhere", "Em lugar nenhum", "Adverb"], ["Away", "Longe/Fora", "Adverb"], ["Out", "Fora", "Adverb"],
+                ["In", "Dentro", "Adverb"], ["Up", "Para cima", "Adverb"], ["Down", "Para baixo", "Adverb"],
+                ["Very", "Muito", "Adverb"], ["Really", "Realmente", "Adverb"], ["Too", "Também/Demais", "Adverb"],
+                ["Quite", "Bastante/Quieto", "Adverb"], ["Almost", "Quase", "Adverb"], ["Just", "Apenas/Justo", "Adverb"],
+                ["Only", "Somente", "Adverb"], ["Even", "Até mesmo", "Adverb"], ["Also", "Também", "Adverb"],
+                ["Maybe", "Talvez", "Adverb"], ["Perhaps", "Talvez", "Adverb"], ["Probably", "Provavelmente", "Adverb"],
+                ["Quickly", "Rapidamente", "Adverb"], ["Slowly", "Lentamente", "Adverb"], ["Carefully", "Cuidadosamente", "Adverb"],
+                ["Easily", "Facilmente", "Adverb"], ["Well", "Bem", "Adverb"], ["Badly", "Mal", "Adverb"],
+                ["Together", "Juntos", "Adverb"], ["Alone", "Sozinho", "Adverb"], ["Again", "De novo", "Adverb"],
+                ["Already", "Já", "Adverb"], ["Still", "Ainda", "Adverb"], ["Yet", "Ainda/Já", "Adverb"],
+                ["Ever", "Jamais/Alguma vez", "Adverb"], ["So", "Então/Tão", "Adverb"], ["Why", "Por que", "Adverb"],
 
-    //# --- SUBSTANTIVOS COMUNS [Nouns] ---
-    ["Time", "Tempo/Hora", "Noun"], ["Year", "Ano", "Noun"], ["People", "Pessoas", "Noun"],
-    ["Way", "Caminho/Jeito", "Noun"], ["Day", "Dia", "Noun"], ["Man", "Homem", "Noun"],
-    ["Thing", "Coisa", "Noun"], ["Woman", "Mulher", "Noun"], ["Life", "Vida", "Noun"],
-    ["Child", "Criança", "Noun"], ["World", "Mundo", "Noun"], ["School", "Escola", "Noun"],
-    ["State", "Estado", "Noun"], ["Family", "Família", "Noun"], ["Student", "Estudante", "Noun"],
-    ["Group", "Grupo", "Noun"], ["Country", "País", "Noun"], ["Problem", "Problema", "Noun"],
-    ["Hand", "Mão", "Noun"], ["Part", "Parte", "Noun"], ["Place", "Lugar", "Noun"],
-    ["Case", "Caso", "Noun"], ["Week", "Semana", "Noun"], ["Company", "Empresa", "Noun"],
-    ["System", "Sistema", "Noun"], ["Program", "Programa", "Noun"], ["Question", "Pergunta", "Noun"],
-    ["Work", "Trabalho", "Noun"], ["Government", "Governo", "Noun"], ["Number", "Número", "Noun"],
-    ["Night", "Noite", "Noun"], ["Point", "Ponto", "Noun"], ["Home", "Lar/Casa", "Noun"],
-    ["Water", "Água", "Noun"], ["Room", "Quarto/Sala", "Noun"], ["Mother", "Mãe", "Noun"],
-    ["Area", "Área", "Noun"], ["Money", "Dinheiro", "Noun"], ["Story", "História", "Noun"],
-    ["Fact", "Fato", "Noun"], ["Month", "Mês", "Noun"], ["Lot", "Lote/Muito", "Noun"],
-    ["Right", "Direito", "Noun"], ["Study", "Estudo", "Noun"], ["Book", "Livro", "Noun"],
-    ["Eye", "Olho", "Noun"], ["Job", "Emprego", "Noun"], ["Word", "Palavra", "Noun"],
-    ["Business", "Negócio", "Noun"], ["Issue", "Questão", "Noun"], ["Side", "Lado", "Noun"],
-    ["Kind", "Tipo", "Noun"], ["Head", "Cabeça", "Noun"], ["House", "Casa [física]", "Noun"],
-    ["Service", "Serviço", "Noun"], ["Friend", "Amigo", "Noun"], ["Father", "Pai", "Noun"],
-    ["Power", "Poder", "Noun"], ["Hour", "Hora", "Noun"], ["Game", "Jogo", "Noun"],
-    ["Line", "Linha", "Noun"], ["End", "Fim", "Noun"], ["Member", "Membro", "Noun"],
-    ["Law", "Lei", "Noun"], ["Car", "Carro", "Noun"], ["City", "Cidade", "Noun"],
-    ["Community", "Comunidade", "Noun"], ["Name", "Nome", "Noun"], ["President", "Presidente", "Noun"],
-    ["Team", "Time", "Noun"], ["Minute", "Minuto", "Noun"], ["Idea", "Ideia", "Noun"],
-    ["Kid", "Criança/Garoto", "Noun"], ["Body", "Corpo", "Noun"], ["Information", "Informação", "Noun"],
-    ["Back", "Costas/Fundo", "Noun"], ["Parent", "Pai/Mãe", "Noun"], ["Face", "Rosto", "Noun"],
-    ["Others", "Outros", "Noun"], ["Level", "Nível", "Noun"], ["Office", "Escritório", "Noun"],
-    ["Door", "Porta", "Noun"], ["Health", "Saúde", "Noun"], ["Person", "Pessoa", "Noun"],
-    ["Art", "Arte", "Noun"], ["War", "Guerra", "Noun"], ["History", "História [disciplina]", "Noun"],
-    ["Party", "Festa/Partido", "Noun"], ["Result", "Resultado", "Noun"], ["Change", "Mudança", "Noun"],
-    ["Morning", "Manhã", "Noun"], ["Reason", "Razão", "Noun"], ["Research", "Pesquisa", "Noun"],
-    ["Girl", "Menina", "Noun"], ["Guy", "Cara", "Noun"], ["Food", "Comida", "Noun"],
-    ["Moment", "Momento", "Noun"], ["Air", "Ar", "Noun"], ["Teacher", "Professor", "Noun"],
-    ["Force", "Força", "Noun"], ["Education", "Educação", "Noun"], ["Foot", "Pé", "Noun"],
-    ["Boy", "Menino", "Noun"], ["Age", "Idade", "Noun"], ["Policy", "Política [regra]", "Noun"],
-    ["Music", "Música", "Noun"], ["Market", "Mercado", "Noun"], ["Sense", "Sentido", "Noun"],
-    ["Nation", "Nação", "Noun"], ["Plan", "Plano", "Noun"], ["Computer", "Computador", "Noun"],
-    ["Software", "Software", "Noun"], ["Internet", "Internet", "Noun"], ["Data", "Dados", "Noun"],
-    ["User", "Usuário", "Noun"], ["Screen", "Tela", "Noun"], ["Key", "Chave/Tecla", "Noun"],
-    ["Code", "Código", "Noun"], ["File", "Arquivo", "Noun"], ["Phone", "Telefone", "Noun"],
-    ["Battery", "Bateria", "Noun"], ["Power", "Força/Energia", "Noun"], ["Light", "Luz", "Noun"],
-    ["Sound", "Som", "Noun"], ["Image", "Imagem", "Noun"], ["Video", "Vídeo", "Noun"],
-    ["Link", "Link", "Noun"], ["Network", "Rede", "Noun"], ["Server", "Servidor", "Noun"],
-    ["Database", "Banco de dados", "Noun"], ["Window", "Janela", "Noun"], ["Table", "Mesa", "Noun"],
-    ["Chair", "Cadeira", "Noun"], ["Bed", "Cama", "Noun"], ["Clothes", "Roupas", "Noun"],
-    ["Shoe", "Sapato", "Noun"], ["Sun", "Sol", "Noun"], ["Moon", "Lua", "Noun"],
-    ["Rain", "Chuva", "Noun"], ["Wind", "Vento", "Noun"], ["Snow", "Neve", "Noun"],
-    ["Fire", "Fogo", "Noun"], ["Ice", "Gelo", "Noun"], ["Sea", "Mar", "Noun"],
-    ["River", "Rio", "Noun"], ["Tree", "Árvore", "Noun"], ["Flower", "Flor", "Noun"],
-    ["Animal", "Animal", "Noun"], ["Dog", "Cachorro", "Noun"], ["Cat", "Gato", "Noun"],
-    ["Bird", "Pássaro", "Noun"], ["Fish", "Peixe", "Noun"], ["Horse", "Cavalo", "Noun"],
-    ["Cow", "Vaca", "Noun"], ["Pig", "Porco", "Noun"], ["Chicken", "Galinha/Frango", "Noun"]
-    ];
+                //# --- PREPOSIÇÕES & CONJUNÇÕES [Prepositions/Conjunctions] ---
+                ["And", "E", "Conjunction"], ["But", "Mas", "Conjunction"], ["Or", "Ou", "Conjunction"],
+                ["Because", "Porque", "Conjunction"], ["If", "Se", "Conjunction"], ["So", "Então", "Conjunction"],
+                ["Although", "Embora", "Conjunction"], ["While", "Enquanto", "Conjunction"],
+                ["Of", "De", "Preposition"], ["To", "Para", "Preposition"], ["In", "Em/Dentro", "Preposition"],
+                ["For", "Para/Por", "Preposition"], ["With", "Com", "Preposition"], ["On", "Em/Sobre", "Preposition"],
+                ["At", "Em/Às", "Preposition"], ["From", "De/Desde", "Preposition"], ["By", "Por", "Preposition"],
+                ["About", "Sobre", "Preposition"], ["As", "Como/Enquanto", "Preposition"], ["Into", "Para dentro", "Preposition"],
+                ["Like", "Como", "Preposition"], ["Through", "Através", "Preposition"], ["After", "Depois", "Preposition"],
+                ["Over", "Sobre/Acima", "Preposition"], ["Between", "Entre", "Preposition"], ["Out", "Fora", "Preposition"],
+                ["Against", "Contra", "Preposition"], ["During", "Durante", "Preposition"], ["Without", "Sem", "Preposition"],
+                ["Before", "Antes", "Preposition"], ["Under", "Embaixo", "Preposition"], ["Around", "Ao redor", "Preposition"],
+                ["Among", "Entre [vários]", "Preposition"],
 
-    // Converter lista crua para objetos
-    const vocabulary = rawData.map(item => ({
-        en: item[0],
-        pt: item[1],
-        cat: item[2]
-    }));
+                //# --- ADJETIVOS ESSENCIAIS [Adjectives] ---
+                ["Good", "Bom", "Adjective"], ["Bad", "Ruim", "Adjective"], ["Big", "Grande", "Adjective"],
+                ["Small", "Pequeno", "Adjective"], ["Large", "Grande/Amplo", "Adjective"], ["Huge", "Enorme", "Adjective"],
+                ["Tiny", "Minúsculo", "Adjective"], ["Long", "Longo", "Adjective"], ["Short", "Curto/Baixo", "Adjective"],
+                ["Tall", "Alto", "Adjective"], ["High", "Alto [nível]", "Adjective"], ["Low", "Baixo [nível]", "Adjective"],
+                ["Wide", "Largo", "Adjective"], ["Narrow", "Estreito", "Adjective"], ["Deep", "Fundo", "Adjective"],
+                ["Shallow", "Raso", "Adjective"], ["Heavy", "Pesado", "Adjective"], ["Light", "Leve/Claro", "Adjective"],
+                ["New", "Novo", "Adjective"], ["Old", "Velho/Antigo", "Adjective"], ["Young", "Jovem", "Adjective"],
+                ["Modern", "Moderno", "Adjective"], ["Ancient", "Antigo", "Adjective"], ["Fast", "Rápido", "Adjective"],
+                ["Slow", "Lento", "Adjective"], ["Hard", "Duro/Difícil", "Adjective"], ["Soft", "Macio", "Adjective"],
+                ["Easy", "Fácil", "Adjective"], ["Difficult", "Difícil", "Adjective"], ["Simple", "Simples", "Adjective"],
+                ["Complex", "Complexo", "Adjective"], ["Hot", "Quente", "Adjective"], ["Cold", "Frio", "Adjective"],
+                ["Warm", "Morno", "Adjective"], ["Cool", "Fresco/Legal", "Adjective"], ["Dry", "Seco", "Adjective"],
+                ["Wet", "Molhado", "Adjective"], ["Happy", "Feliz", "Adjective"], ["Sad", "Triste", "Adjective"],
+                ["Angry", "Bravo", "Adjective"], ["Calm", "Calmo", "Adjective"], ["Excited", "Animado", "Adjective"],
+                ["Bored", "Entediado", "Adjective"], ["Tired", "Cansado", "Adjective"], ["Hungry", "Faminto", "Adjective"],
+                ["Thirsty", "Sedento", "Adjective"], ["Sick", "Doente", "Adjective"], ["Healthy", "Saudável", "Adjective"],
+                ["Strong", "Forte", "Adjective"], ["Weak", "Fraco", "Adjective"], ["Beautiful", "Bonito", "Adjective"],
+                ["Ugly", "Feio", "Adjective"], ["Clean", "Limpo", "Adjective"], ["Dirty", "Sujo", "Adjective"],
+                ["Rich", "Rico", "Adjective"], ["Poor", "Pobre", "Adjective"], ["Expensive", "Caro", "Adjective"],
+                ["Cheap", "Barato", "Adjective"], ["Full", "Cheio", "Adjective"], ["Empty", "Vazio", "Adjective"],
+                ["Right", "Certo", "Adjective"], ["Wrong", "Errado", "Adjective"], ["True", "Verdadeiro", "Adjective"],
+                ["False", "Falso", "Adjective"], ["Open", "Aberto", "Adjective"], ["Closed", "Fechado", "Adjective"],
+                ["Safe", "Seguro", "Adjective"], ["Dangerous", "Perigoso", "Adjective"], ["Same", "Mesmo", "Adjective"],
+                ["Different", "Diferente", "Adjective"], ["Important", "Importante", "Adjective"], ["Ready", "Pronto", "Adjective"],
+                ["Available", "Disponível", "Adjective"], ["Free", "Livre/Grátis", "Adjective"], ["Busy", "Ocupado", "Adjective"],
+                ["Kind", "Gentil", "Adjective"], ["Mean", "Malvado", "Adjective"], ["Funny", "Engraçado", "Adjective"],
+                ["Serious", "Sério", "Adjective"], ["Smart", "Esperto", "Adjective"], ["Stupid", "Estúpido", "Adjective"],
+                ["Polite", "Educado", "Adjective"], ["Rude", "Grosseiro", "Adjective"], ["Nice", "Legal", "Adjective"],
+                ["Famous", "Famoso", "Adjective"], ["Common", "Comum", "Adjective"], ["Rare", "Raro", "Adjective"],
+                ["Clear", "Claro", "Adjective"], ["Dark", "Escuro", "Adjective"], ["Bright", "Brilhante", "Adjective"],
+                ["Loud", "Alto [som]", "Adjective"], ["Quiet", "Quieto", "Adjective"], ["Sharp", "Afiado", "Adjective"],
+                ["Smooth", "Liso", "Adjective"], ["Rough", "Áspero", "Adjective"], ["Sweet", "Doce", "Adjective"],
+                ["Sour", "Azedo", "Adjective"], ["Bitter", "Amargo", "Adjective"], ["Salty", "Salgado", "Adjective"],
+                ["Fresh", "Fresco", "Adjective"], ["Rotten", "Podre", "Adjective"], ["Single", "Solteiro/Único", "Adjective"],
+                ["Married", "Casado", "Adjective"], ["Dead", "Morto", "Adjective"], ["Alive", "Vivo", "Adjective"],
+                ["Human", "Humano", "Adjective"], ["Social", "Social", "Adjective"], ["Public", "Público", "Adjective"],
+                ["Private", "Privado", "Adjective"], ["Main", "Principal", "Adjective"], ["Real", "Real", "Adjective"],
+                ["Fake", "Falso/Falsificado", "Adjective"], ["Possible", "Possível", "Adjective"], ["Impossible", "Impossível", "Adjective"],
+                ["Likely", "Provável", "Adjective"], ["Unlikely", "Improvável", "Adjective"], ["Certain", "Certo", "Adjective"],
+                ["Unsure", "Incerto", "Adjective"], ["Useful", "Útil", "Adjective"], ["Useless", "Inútil", "Adjective"],
+                ["Foreign", "Estrangeiro", "Adjective"], ["Local", "Local", "Adjective"], ["Current", "Atual", "Adjective"],
+                ["Past", "Passado", "Adjective"], ["Future", "Futuro", "Adjective"], ["Whole", "Inteiro", "Adjective"],
+                ["Broken", "Quebrado", "Adjective"], ["Working", "Funcionando", "Adjective"], ["Asleep", "Adormecido", "Adjective"],
+                ["Awake", "Acordado", "Adjective"], ["Afraid", "Com medo", "Adjective"], ["Brave", "Corajoso", "Adjective"],
 
-    // --- 2. VARIÁVEIS DE ESTADO ---
-    let currentCategory = 'All';
-    let currentQuestion = null;
-    let score = 0;
-    let isProcessing = false; // Evita cliques múltiplos
+                //# --- VERBOS ESSENCIAIS [Verbs - Infinitivo] ---
+                ["Be", "Ser/Estar", "Verb"], ["Have", "Ter", "Verb"], ["Do", "Fazer", "Verb"],
+                ["Say", "Dizer", "Verb"], ["Go", "Ir", "Verb"], ["Get", "Pegar/Conseguir", "Verb"],
+                ["Make", "Fazer [criar]", "Verb"], ["Know", "Saber/Conhecer", "Verb"], ["Think", "Pensar/Achar", "Verb"],
+                ["Take", "Tomar/Levar", "Verb"], ["See", "Ver", "Verb"], ["Come", "Vir", "Verb"],
+                ["Want", "Querer", "Verb"], ["Look", "Olhar/Parecer", "Verb"], ["Use", "Usar", "Verb"],
+                ["Find", "Encontrar", "Verb"], ["Give", "Dar", "Verb"], ["Tell", "Contar/Dizer", "Verb"],
+                ["Work", "Trabalhar", "Verb"], ["Call", "Chamar/Ligar", "Verb"], ["Try", "Tentar", "Verb"],
+                ["Ask", "Perguntar/Pedir", "Verb"], ["Need", "Precisar", "Verb"], ["Feel", "Sentir", "Verb"],
+                ["Become", "Tornar-se", "Verb"], ["Leave", "Sair/Deixar", "Verb"], ["Put", "Colocar", "Verb"],
+                ["Mean", "Significar", "Verb"], ["Keep", "Manter", "Verb"], ["Let", "Deixar/Permitir", "Verb"],
+                ["Begin", "Começar", "Verb"], ["Seem", "Parecer", "Verb"], ["Help", "Ajudar", "Verb"],
+                ["Talk", "Conversar", "Verb"], ["Turn", "Virar", "Verb"], ["Start", "Começar", "Verb"],
+                ["Show", "Mostrar", "Verb"], ["Hear", "Ouvir", "Verb"], ["Play", "Brincar/Tocar", "Verb"],
+                ["Run", "Correr", "Verb"], ["Move", "Mover", "Verb"], ["Like", "Gostar", "Verb"],
+                ["Live", "Viver/Morar", "Verb"], ["Believe", "Acreditar", "Verb"], ["Hold", "Segurar", "Verb"],
+                ["Bring", "Trazer", "Verb"], ["Happen", "Acontecer", "Verb"], ["Write", "Escrever", "Verb"],
+                ["Provide", "Prover/Fornecer", "Verb"], ["Sit", "Sentar", "Verb"], ["Stand", "Ficar de pé", "Verb"],
+                ["Lose", "Perder", "Verb"], ["Pay", "Pagar", "Verb"], ["Meet", "Encontrar/Conhecer", "Verb"],
+                ["Include", "Incluir", "Verb"], ["Continue", "Continuar", "Verb"], ["Set", "Definir/Pôr", "Verb"],
+                ["Learn", "Aprender", "Verb"], ["Change", "Mudar", "Verb"], ["Lead", "Liderar", "Verb"],
+                ["Understand", "Entender", "Verb"], ["Watch", "Assistir", "Verb"], ["Follow", "Seguir", "Verb"],
+                ["Stop", "Parar", "Verb"], ["Create", "Criar", "Verb"], ["Speak", "Falar", "Verb"],
+                ["Read", "Ler", "Verb"], ["Allow", "Permitir", "Verb"], ["Add", "Adicionar", "Verb"],
+                ["Spend", "Gastar", "Verb"], ["Grow", "Crescer", "Verb"], ["Open", "Abrir", "Verb"],
+                ["Walk", "Andar", "Verb"], ["Win", "Vencer", "Verb"], ["Offer", "Oferecer", "Verb"],
+                ["Remember", "Lembrar", "Verb"], ["Love", "Amar", "Verb"], ["Consider", "Considerar", "Verb"],
+                ["Appear", "Aparecer", "Verb"], ["Buy", "Comprar", "Verb"], ["Wait", "Esperar", "Verb"],
+                ["Serve", "Servir", "Verb"], ["Die", "Morrer", "Verb"], ["Send", "Enviar", "Verb"],
+                ["Expect", "Esperar [expectativa]", "Verb"], ["Build", "Construir", "Verb"], ["Stay", "Ficar", "Verb"],
+                ["Fall", "Cair", "Verb"], ["Cut", "Cortar", "Verb"], ["Reach", "Alcançar", "Verb"],
+                ["Kill", "Matar", "Verb"], ["Remain", "Permanecer", "Verb"], ["Suggest", "Sugerir", "Verb"],
+                ["Raise", "Levantar/Criar", "Verb"], ["Pass", "Passar", "Verb"], ["Sell", "Vender", "Verb"],
+                ["Require", "Requerer", "Verb"], ["Report", "Reportar", "Verb"], ["Decide", "Decidir", "Verb"],
+                ["Pull", "Puxar", "Verb"], ["Push", "Empurrar", "Verb"], ["Break", "Quebrar", "Verb"],
+                ["Eat", "Comer", "Verb"], ["Drink", "Beber", "Verb"], ["Sleep", "Dormir", "Verb"],
+                ["Throw", "Jogar", "Verb"], ["Catch", "Pegar [bola]", "Verb"], ["Drive", "Dirigir", "Verb"],
+                ["Fly", "Voar", "Verb"], ["Swim", "Nadar", "Verb"], ["Teach", "Ensinar", "Verb"],
+                ["Study", "Estudar", "Verb"], ["Cost", "Custar", "Verb"], ["Forget", "Esquecer", "Verb"],
 
-    // --- 3. INICIALIZAÇÃO ---
-    function init() {
-        loadScore();
-        createTabs();
-        loadQuestion();
-    }
+                //# --- SUBSTANTIVOS COMUNS [Nouns] ---
+                ["Time", "Tempo/Hora", "Noun"], ["Year", "Ano", "Noun"], ["People", "Pessoas", "Noun"],
+                ["Way", "Caminho/Jeito", "Noun"], ["Day", "Dia", "Noun"], ["Man", "Homem", "Noun"],
+                ["Thing", "Coisa", "Noun"], ["Woman", "Mulher", "Noun"], ["Life", "Vida", "Noun"],
+                ["Child", "Criança", "Noun"], ["World", "Mundo", "Noun"], ["School", "Escola", "Noun"],
+                ["State", "Estado", "Noun"], ["Family", "Família", "Noun"], ["Student", "Estudante", "Noun"],
+                ["Group", "Grupo", "Noun"], ["Country", "País", "Noun"], ["Problem", "Problema", "Noun"],
+                ["Hand", "Mão", "Noun"], ["Part", "Parte", "Noun"], ["Place", "Lugar", "Noun"],
+                ["Case", "Caso", "Noun"], ["Week", "Semana", "Noun"], ["Company", "Empresa", "Noun"],
+                ["System", "Sistema", "Noun"], ["Program", "Programa", "Noun"], ["Question", "Pergunta", "Noun"],
+                ["Work", "Trabalho", "Noun"], ["Government", "Governo", "Noun"], ["Number", "Número", "Noun"],
+                ["Night", "Noite", "Noun"], ["Point", "Ponto", "Noun"], ["Home", "Lar/Casa", "Noun"],
+                ["Water", "Água", "Noun"], ["Room", "Quarto/Sala", "Noun"], ["Mother", "Mãe", "Noun"],
+                ["Area", "Área", "Noun"], ["Money", "Dinheiro", "Noun"], ["Story", "História", "Noun"],
+                ["Fact", "Fato", "Noun"], ["Month", "Mês", "Noun"], ["Lot", "Lote/Muito", "Noun"],
+                ["Right", "Direito", "Noun"], ["Study", "Estudo", "Noun"], ["Book", "Livro", "Noun"],
+                ["Eye", "Olho", "Noun"], ["Job", "Emprego", "Noun"], ["Word", "Palavra", "Noun"],
+                ["Business", "Negócio", "Noun"], ["Issue", "Questão", "Noun"], ["Side", "Lado", "Noun"],
+                ["Kind", "Tipo", "Noun"], ["Head", "Cabeça", "Noun"], ["House", "Casa [física]", "Noun"],
+                ["Service", "Serviço", "Noun"], ["Friend", "Amigo", "Noun"], ["Father", "Pai", "Noun"],
+                ["Power", "Poder", "Noun"], ["Hour", "Hora", "Noun"], ["Game", "Jogo", "Noun"],
+                ["Line", "Linha", "Noun"], ["End", "Fim", "Noun"], ["Member", "Membro", "Noun"],
+                ["Law", "Lei", "Noun"], ["Car", "Carro", "Noun"], ["City", "Cidade", "Noun"],
+                ["Community", "Comunidade", "Noun"], ["Name", "Nome", "Noun"], ["President", "Presidente", "Noun"],
+                ["Team", "Time", "Noun"], ["Minute", "Minuto", "Noun"], ["Idea", "Ideia", "Noun"],
+                ["Kid", "Criança/Garoto", "Noun"], ["Body", "Corpo", "Noun"], ["Information", "Informação", "Noun"],
+                ["Back", "Costas/Fundo", "Noun"], ["Parent", "Pai/Mãe", "Noun"], ["Face", "Rosto", "Noun"],
+                ["Others", "Outros", "Noun"], ["Level", "Nível", "Noun"], ["Office", "Escritório", "Noun"],
+                ["Door", "Porta", "Noun"], ["Health", "Saúde", "Noun"], ["Person", "Pessoa", "Noun"],
+                ["Art", "Arte", "Noun"], ["War", "Guerra", "Noun"], ["History", "História [disciplina]", "Noun"],
+                ["Party", "Festa/Partido", "Noun"], ["Result", "Resultado", "Noun"], ["Change", "Mudança", "Noun"],
+                ["Morning", "Manhã", "Noun"], ["Reason", "Razão", "Noun"], ["Research", "Pesquisa", "Noun"],
+                ["Girl", "Menina", "Noun"], ["Guy", "Cara", "Noun"], ["Food", "Comida", "Noun"],
+                ["Moment", "Momento", "Noun"], ["Air", "Ar", "Noun"], ["Teacher", "Professor", "Noun"],
+                ["Force", "Força", "Noun"], ["Education", "Educação", "Noun"], ["Foot", "Pé", "Noun"],
+                ["Boy", "Menino", "Noun"], ["Age", "Idade", "Noun"], ["Policy", "Política [regra]", "Noun"],
+                ["Music", "Música", "Noun"], ["Market", "Mercado", "Noun"], ["Sense", "Sentido", "Noun"],
+                ["Nation", "Nação", "Noun"], ["Plan", "Plano", "Noun"], ["Computer", "Computador", "Noun"],
+                ["Software", "Software", "Noun"], ["Internet", "Internet", "Noun"], ["Data", "Dados", "Noun"],
+                ["User", "Usuário", "Noun"], ["Screen", "Tela", "Noun"], ["Key", "Chave/Tecla", "Noun"],
+                ["Code", "Código", "Noun"], ["File", "Arquivo", "Noun"], ["Phone", "Telefone", "Noun"],
+                ["Battery", "Bateria", "Noun"], ["Power", "Força/Energia", "Noun"], ["Light", "Luz", "Noun"],
+                ["Sound", "Som", "Noun"], ["Image", "Imagem", "Noun"], ["Video", "Vídeo", "Noun"],
+                ["Link", "Link", "Noun"], ["Network", "Rede", "Noun"], ["Server", "Servidor", "Noun"],
+                ["Database", "Banco de dados", "Noun"], ["Window", "Janela", "Noun"], ["Table", "Mesa", "Noun"],
+                ["Chair", "Cadeira", "Noun"], ["Bed", "Cama", "Noun"], ["Clothes", "Roupas", "Noun"],
+                ["Shoe", "Sapato", "Noun"], ["Sun", "Sol", "Noun"], ["Moon", "Lua", "Noun"],
+                ["Rain", "Chuva", "Noun"], ["Wind", "Vento", "Noun"], ["Snow", "Neve", "Noun"],
+                ["Fire", "Fogo", "Noun"], ["Ice", "Gelo", "Noun"], ["Sea", "Mar", "Noun"],
+                ["River", "Rio", "Noun"], ["Tree", "Árvore", "Noun"], ["Flower", "Flor", "Noun"],
+                ["Animal", "Animal", "Noun"], ["Dog", "Cachorro", "Noun"], ["Cat", "Gato", "Noun"],
+                ["Bird", "Pássaro", "Noun"], ["Fish", "Peixe", "Noun"], ["Horse", "Cavalo", "Noun"],
+                ["Cow", "Vaca", "Noun"], ["Pig", "Porco", "Noun"], ["Chicken", "Galinha/Frango", "Noun"]
+            ];
 
-    // Carregar pontuação do Storage
-    function loadScore() {
-        const saved = localStorage.getItem('vocabGameScore');
-        if (saved) {
-            score = parseInt(saved);
-        }
-        updateScoreDisplay();
-    }
+            // Converter lista crua para objetos
+            const vocabulary = rawData.map(item => ({
+                en: item[0],
+                pt: item[1],
+                cat: item[2]
+            }));
 
-    // Salvar pontuação
-    function saveScore() {
-        localStorage.setItem('vocabGameScore', score);
-        updateScoreDisplay();
-    }
+            // --- 2. VARIÁVEIS DE ESTADO ---
+            let currentCategory = 'All';
+            let currentQuestion = null;
+            let score = 0;
+            let isProcessing = false; // Evita cliques múltiplos
 
-    function updateScoreDisplay() {
-        const el = document.getElementById('score');
-        el.innerText = score;
-        el.style.color = score < 0 ? '#e74c3c' : 'white';
-    }
-
-    function resetScore() {
-        score = 0;
-        saveScore();
-        loadQuestion();
-    }
-
-    // Criar abas dinamicamente
-    function createTabs() {
-        const categories = ['All', ...new Set(vocabulary.map(v => v.cat))];
-        const container = document.getElementById('tabs-container');
-        
-        categories.forEach((cat, index) => {
-            const btn = document.createElement('button');
-            btn.className = `tab ${index === 0 ? 'active' : ''}`;
-            btn.innerText = cat === 'All' ? 'Todos' : cat;
-            btn.onclick = () => switchTab(cat, btn);
-            container.appendChild(btn);
-        });
-    }
-
-    function switchTab(cat, btnElement) {
-        currentCategory = cat;
-        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-        btnElement.classList.add('active');
-        loadQuestion();
-    }
-
-    // --- 4. LÓGICA DO JOGO ---
-    function loadQuestion() {
-        isProcessing = false;
-        document.getElementById('feedback-msg').innerText = "";
-        const grid = document.getElementById('options-container');
-        grid.innerHTML = ''; // Limpa botões antigos
-
-        // Filtrar palavras pela categoria
-        let pool = currentCategory === 'All' 
-            ? vocabulary 
-            : vocabulary.filter(v => v.cat === currentCategory);
-
-        // Segurança se faltar palavras na categoria
-        if (pool.length < 8) {
-            const others = vocabulary.filter(v => v.cat !== currentCategory);
-            pool = [...pool, ...others];
-        }
-
-        // 1. Escolher a palavra correta (Target)
-        const targetIndex = Math.floor(Math.random() * pool.length);
-        currentQuestion = pool[targetIndex];
-
-        // 2. Iniciar lista de opções com a resposta certa
-        let options = [currentQuestion];
-        
-        // 3. Preencher com 7 distratores
-        let attempts = 0;
-        while (options.length < 8 && attempts < 200) {
-            const randomWord = pool[Math.floor(Math.random() * pool.length)];
-            // Evitar duplicatas na tela
-            if (!options.find(o => o.en === randomWord.en)) {
-                options.push(randomWord);
+            // --- 3. INICIALIZAÇÃO ---
+            function init() {
+                loadScore();
+                createTabs();
+                loadQuestion();
             }
-            attempts++;
-        }
-        // Failsafe final se o banco de dados for muito pequeno
-        if (options.length < 8) {
-             while (options.length < 8) {
-                const randomWord = vocabulary[Math.floor(Math.random() * vocabulary.length)];
-                if (!options.find(o => o.en === randomWord.en)) options.push(randomWord);
-             }
-        }
 
-        // 4. EMBARALHAR ROBUSTO (A correção principal)
-        // Removemos o sort() antigo e usamos a nova função
-        shuffleArray(options);
-
-        renderGame(currentQuestion, options);
-    }
-
-    function renderGame(target, options) {
-        document.getElementById('question-word').innerText = target.pt;
-        const grid = document.getElementById('options-container');
-
-        options.forEach(opt => {
-            const btn = document.createElement('button');
-            btn.className = 'option-btn';
-            btn.innerText = opt.en;
-            btn.onclick = () => checkAnswer(opt, btn);
-            grid.appendChild(btn);
-        });
-    }
-
-    function checkAnswer(selected, btnElement) {
-        if (isProcessing) return;
-        isProcessing = true;
-
-        const isCorrect = selected.en === currentQuestion.en;
-        const feedbackEl = document.getElementById('feedback-msg');
-
-        if (isCorrect) {
-            score += 1;
-            btnElement.classList.add('correct');
-            feedbackEl.innerText = "Correto! +1";
-            feedbackEl.style.color = "var(--success)";
-        } else {
-            score -= 2;
-            btnElement.classList.add('wrong');
-            feedbackEl.innerText = "Errado! -2";
-            feedbackEl.style.color = "var(--danger)";
-
-            // Mostrar qual era a correta
-            const buttons = document.querySelectorAll('.option-btn');
-            buttons.forEach(b => {
-                if (b.innerText === currentQuestion.en) {
-                    b.classList.add('correct');
+            // Carregar pontuação do Storage
+            function loadScore() {
+                const saved = localStorage.getItem('vocabGameScore');
+                if (saved) {
+                    score = parseInt(saved);
                 }
-            });
-        }
-        saveScore();
-        setTimeout(() => { loadQuestion(); }, 1500);
-    }
+                updateScoreDisplay();
+            }
 
-    // --- FUNÇÕES UTILITÁRIAS ---
+            // Salvar pontuação
+            function saveScore() {
+                localStorage.setItem('vocabGameScore', score);
+                updateScoreDisplay();
+            }
 
-    // Algoritmo de embaralhamento Fisher-Yates (O padrão ouro para aleatoriedade)
-    function shuffleArray(array) {
-        for (let i = array.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]]; // Troca os elementos
-        }
-        return array;
-    }
+            function updateScoreDisplay() {
+                const el = document.getElementById('score');
+                el.innerText = score;
+                el.style.color = score < 0 ? '#e74c3c' : 'white';
+            }
 
-    // Iniciar
-    init();
+            function resetScore() {
+                score = 0;
+                saveScore();
+                loadQuestion();
+            }
 
-</script>
+            // Criar abas dinamicamente
+            function createTabs() {
+                const categories = ['All', ...new Set(vocabulary.map(v => v.cat))];
+                const container = document.getElementById('tabs-container');
 
-</body>
-</html>
+                categories.forEach((cat, index) => {
+                    const btn = document.createElement('button');
+                    btn.className = `tab ${index === 0 ? 'active' : ''}`;
+                    btn.innerText = cat === 'All' ? 'Todos' : cat;
+                    btn.onclick = () => switchTab(cat, btn);
+                    container.appendChild(btn);
+                });
+            }
+
+            function switchTab(cat, btnElement) {
+                currentCategory = cat;
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                btnElement.classList.add('active');
+                loadQuestion();
+            }
+
+            // --- 4. LÓGICA DO JOGO ---
+            function loadQuestion() {
+                isProcessing = false;
+                document.getElementById('feedback-msg').innerText = "";
+                const grid = document.getElementById('options-container');
+                grid.innerHTML = ''; // Limpa botões antigos
+
+                // Filtrar palavras pela categoria
+                let pool = currentCategory === 'All'
+                    ? vocabulary
+                    : vocabulary.filter(v => v.cat === currentCategory);
+
+                // Segurança se faltar palavras na categoria
+                if (pool.length < 8) {
+                    const others = vocabulary.filter(v => v.cat !== currentCategory);
+                    pool = [...pool, ...others];
+                }
+
+                // 1. Escolher a palavra correta (Target)
+                const targetIndex = Math.floor(Math.random() * pool.length);
+                currentQuestion = pool[targetIndex];
+
+                // 2. Iniciar lista de opções com a resposta certa
+                let options = [currentQuestion];
+
+                // 3. Preencher com 7 distratores
+                let attempts = 0;
+                while (options.length < 8 && attempts < 200) {
+                    const randomWord = pool[Math.floor(Math.random() * pool.length)];
+                    // Evitar duplicatas na tela
+                    if (!options.find(o => o.en === randomWord.en)) {
+                        options.push(randomWord);
+                    }
+                    attempts++;
+                }
+                // Failsafe final se o banco de dados for muito pequeno
+                if (options.length < 8) {
+                    while (options.length < 8) {
+                        const randomWord = vocabulary[Math.floor(Math.random() * vocabulary.length)];
+                        if (!options.find(o => o.en === randomWord.en)) options.push(randomWord);
+                    }
+                }
+
+                // 4. EMBARALHAR ROBUSTO (A correção principal)
+                // Removemos o sort() antigo e usamos a nova função
+                shuffleArray(options);
+
+                renderGame(currentQuestion, options);
+            }
+
+            function renderGame(target, options) {
+                document.getElementById('question-word').innerText = target.pt;
+                const grid = document.getElementById('options-container');
+
+                options.forEach(opt => {
+                    const btn = document.createElement('button');
+                    btn.className = 'option-btn';
+                    btn.innerText = opt.en;
+                    btn.onclick = () => checkAnswer(opt, btn);
+                    grid.appendChild(btn);
+                });
+            }
+
+            function checkAnswer(selected, btnElement) {
+                if (isProcessing) return;
+                isProcessing = true;
+
+                const isCorrect = selected.en === currentQuestion.en;
+                const feedbackEl = document.getElementById('feedback-msg');
+
+                if (isCorrect) {
+                    score += 1;
+                    btnElement.classList.add('correct');
+                    feedbackEl.innerText = "Correto! +1";
+                    feedbackEl.style.color = "var(--success)";
+                } else {
+                    score -= 2;
+                    btnElement.classList.add('wrong');
+                    feedbackEl.innerText = "Errado! -2";
+                    feedbackEl.style.color = "var(--danger)";
+
+                    // Mostrar qual era a correta
+                    const buttons = document.querySelectorAll('.option-btn');
+                    buttons.forEach(b => {
+                        if (b.innerText === currentQuestion.en) {
+                            b.classList.add('correct');
+                        }
+                    });
+                }
+                saveScore();
+                setTimeout(() => { loadQuestion(); }, 1500);
+            }
+
+            // --- FUNÇÕES UTILITÁRIAS ---
+
+            // Algoritmo de embaralhamento Fisher-Yates (O padrão ouro para aleatoriedade)
+            function shuffleArray(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]]; // Troca os elementos
+                }
+                return array;
+            }
+
+            // Iniciar
+            init();
+
+        </script>
+
 
 
 
     </div>
-
-
-
-
-
-</div>
-
-
-     
-    </div>
 </body>
+
 </html>
